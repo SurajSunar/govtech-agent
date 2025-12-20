@@ -5,5 +5,5 @@ import tailwindcss from "@tailwindcss/vite";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: "/rag/", // Replace 'your-repo-name'
+  base: "/govtech-agent/", // Replace 'your-repo-name'
 });
