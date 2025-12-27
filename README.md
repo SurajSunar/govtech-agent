@@ -4,6 +4,8 @@ This project is for RAG Agent for Govt.
 
 Added links for 3 projects.
 
+There is chabot which can be customized based on need.
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
