@@ -6,6 +6,8 @@ Added links for 3 projects.
 
 There is chabot which can be customized based on need.
 
+There is need to add new features which can be added.
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
