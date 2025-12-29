@@ -7,7 +7,7 @@ import Home from "./pages/Home";
 
 function App() {
   return (
-    <div className="bg-amber-50">
+    <div className="bg-amber-50 backdrop-blur-sm">
       <div className="flex flex-col mx-auto h-screen w-1/2 items-center justify-center">
         <HashRouter>
           <Routes>

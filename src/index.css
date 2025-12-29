@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+.backdrop-blur-sm {
+  text-align: justify;
+}
