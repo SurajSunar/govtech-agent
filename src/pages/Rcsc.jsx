@@ -35,7 +35,6 @@ const Rcsc = () => {
         company: "Govtech Bhutan",
         companyLink: "https://tech.gov.bt",
       },
-      starterPrompts: ["What is a bot?", "Who are you?"],
       renderHTML: true,
     },
   };
