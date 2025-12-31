@@ -8,6 +8,7 @@ There is individual chabot which can be customized based on need.
 ### Stacks used:
 - React
 - Tailwindcss
+- React lucide
 
 
 
