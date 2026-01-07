@@ -22,12 +22,12 @@ const Mofaet = () => {
       welcomeMessage:
         "Hello, I am Chidrel, the AI Assistant of the Ministry of Foreign Affairs and External Trade of Bhutan. I am continually learning, and your interactions help me improve.",
       showTitle: true,
-      title: "MoFAET Chatbot",
+      title: "Chidrel",
       titleAvatarSrc: "https://tech.gov.bt/wp-content/uploads/2025/09/logo.png",
       botMessage: {
         showAvatar: true,
         avatarSrc:
-          "https://tech.gov.bt/wp-content/uploads/2025/09/bot-avatar.png",
+          "https://admin.ibls.systems.gov.bt/uploads/Bhutan_157c9c3c1a.png",
       },
       footer: {
         textColor: "#303235",
