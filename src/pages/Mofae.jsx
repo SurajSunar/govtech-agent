@@ -27,7 +27,7 @@ const Mofaet = () => {
       botMessage: {
         showAvatar: true,
         avatarSrc:
-          "https://admin.ibls.systems.gov.bt/uploads/Bhutan_157c9c3c1a.png",
+          "https://www.mfa.gov.bt/wp-content/uploads/2026/01/Screenshot-7.png",
       },
       footer: {
         textColor: "#303235",
