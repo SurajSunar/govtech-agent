@@ -1,7 +1,16 @@
 import { BubbleChat } from "flowise-embed-react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const Mofaet = () => {
+  const [isNew, setIsNew] = useState(
+    JSON.parse(localStorage.getItem("new_chat_mode"))
+  );
+
+  const btnClick = (flag) => {
+    localStorage.setItem("new_chat_mode", flag);
+    window.location.reload();
+  };
+
   const theme = {
     disclaimer: {
       title: "Disclaimer",
@@ -46,44 +55,72 @@ const Mofaet = () => {
 
   return (
     <div className="bg-linear-to-br from-amber-200 via-amber-100 to-amber-50 w-full h-60 rounded-lg">
-      <div className="h-full flex justify-center items-center">
-        <h1 className="text-4xl text-amber-700">
+      <div className="p-4 h-full flex justify-center items-center flex-col">
+        <h1 className="md:text-4xl text-amber-700">
           Welcome to the AI Chatbot for MOFAET
         </h1>
+
+        {isNew ? (
+          <button
+            className="bg-gray-200 rounded-lg py-2 px-4 mt-4 cursor-pointer"
+            onClick={() => btnClick(false)}
+          >
+            Load Old Chat
+          </button>
+        ) : (
+          <button
+            className="bg-amber-500 rounded-lg py-2 px-4 mt-4 cursor-pointer"
+            onClick={() => btnClick(true)}
+          >
+            Load New Chat
+          </button>
+        )}
       </div>
-      <BubbleChat
-        //chatflowid="5f56cce0-73c4-440e-934d-6127e245865b"
-        chatflowid="a9d6d456-4b27-4805-8f03-532560d9700c"
-        apiHost="https://chatbot.tech.gov.bt"
-        theme={{ ...theme }}
-        observersConfig={{
-          // The bot message stack has changed
-          observeMessages: (messages) => {
-            const messageIndex = messages.findIndex((msg) => msg.action);
+      {isNew ? (
+        <BubbleChat
+          //chatflowid="5f56cce0-73c4-440e-934d-6127e245865b"
+          chatflowid="a9d6d456-4b27-4805-8f03-532560d9700c"
+          apiHost="https://chatbot.tech.gov.bt"
+          theme={{ ...theme }}
+          observersConfig={{
+            // The bot message stack has changed
+            observeMessages: (messages) => {
+              const messageIndex = messages.findIndex((msg) => msg.action);
 
-            if (messageIndex > -1) {
-              setTimeout(() => {
-                const chatbotHost = document.querySelector("flowise-chatbot");
+              if (messageIndex > -1) {
+                setTimeout(() => {
+                  const chatbotHost = document.querySelector("flowise-chatbot");
 
-                if (chatbotHost && chatbotHost.shadowRoot) {
-                  const shadowRoot = chatbotHost.shadowRoot;
-                  const buttonNodes = shadowRoot.querySelectorAll("button");
-                  const buttons = Array.from(buttonNodes);
+                  if (chatbotHost && chatbotHost.shadowRoot) {
+                    const shadowRoot = chatbotHost.shadowRoot;
+                    const buttonNodes = shadowRoot.querySelectorAll("button");
+                    const buttons = Array.from(buttonNodes);
 
-                  if (buttons.length) {
-                    buttons?.forEach((btn) => {
-                      if (btn.innerText.includes("Proceed"))
-                        btn.innerText = " Yes";
-                      if (btn.innerText.includes("Reject"))
-                        btn.innerText = " No";
-                    });
+                    if (buttons.length) {
+                      buttons?.forEach((btn) => {
+                        if (btn.innerText.includes("Proceed"))
+                          btn.innerText = " Yes";
+                        if (btn.innerText.includes("Reject"))
+                          btn.innerText = " No";
+                      });
+                    }
                   }
-                }
-              }, 400);
-            }
-          },
-        }}
-      />
+                }, 400);
+              }
+            },
+          }}
+        />
+      ) : (
+        <BubbleChat
+          chatflowid="5f56cce0-73c4-440e-934d-6127e245865b"
+          //chatflowid="a9d6d456-4b27-4805-8f03-532560d9700c"
+          apiHost="https://chatbot.tech.gov.bt"
+          theme={{
+            ...theme,
+            chatWindow: { ...theme.chatWindow, title: "old" },
+          }}
+        />
+      )}
     </div>
   );
 };
