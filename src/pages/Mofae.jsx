@@ -117,7 +117,7 @@ const Mofaet = () => {
           apiHost="https://chatbot.tech.gov.bt"
           theme={{
             ...theme,
-            chatWindow: { ...theme.chatWindow, title: "old" },
+            chatWindow: { ...theme.chatWindow, title: "Old Chidrel" },
           }}
         />
       )}
