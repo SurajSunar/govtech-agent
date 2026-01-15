@@ -27,7 +27,7 @@ const Rcsc = () => {
       botMessage: {
         showAvatar: true,
         avatarSrc:
-          "https://tech.gov.bt/wp-content/uploads/2025/09/bot-avatar.png",
+          "https://rcsc.gov.bt/wp-content/uploads/2024/11/RCSC-logo-1.png",
       },
       footer: {
         textColor: "#303235",

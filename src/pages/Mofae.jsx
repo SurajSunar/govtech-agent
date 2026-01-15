@@ -56,6 +56,33 @@ const Mofaet = () => {
         chatflowid="a9d6d456-4b27-4805-8f03-532560d9700c"
         apiHost="https://chatbot.tech.gov.bt"
         theme={{ ...theme }}
+        observersConfig={{
+          // The bot message stack has changed
+          observeMessages: (messages) => {
+            const messageIndex = messages.findIndex((msg) => msg.action);
+
+            if (messageIndex > -1) {
+              setTimeout(() => {
+                const chatbotHost = document.querySelector("flowise-chatbot");
+
+                if (chatbotHost && chatbotHost.shadowRoot) {
+                  const shadowRoot = chatbotHost.shadowRoot;
+                  const buttonNodes = shadowRoot.querySelectorAll("button");
+                  const buttons = Array.from(buttonNodes);
+
+                  if (buttons.length) {
+                    buttons?.forEach((btn) => {
+                      if (btn.innerText.includes("Proceed"))
+                        btn.innerText = " Yes";
+                      if (btn.innerText.includes("Reject"))
+                        btn.innerText = " No";
+                    });
+                  }
+                }
+              }, 400);
+            }
+          },
+        }}
       />
     </div>
   );
