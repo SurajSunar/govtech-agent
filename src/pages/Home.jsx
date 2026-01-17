@@ -16,7 +16,7 @@ function Home() {
       </nav>
       <div className="h-1/2 flex justify-center items-center">
         <h1 className="text-4xl text-amber-700">
-          Welcome to the RAG Agent for Gov Agencies
+          Welcome to the RAG Agent for Gov Agencies. You can only chat here.
         </h1>
       </div>
     </div>
