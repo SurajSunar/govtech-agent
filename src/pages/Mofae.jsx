@@ -2,8 +2,9 @@ import { BubbleChat } from "flowise-embed-react";
 import { useEffect, useState } from "react";
 
 const Mofaet = () => {
+  const [isLoading, setLoading] = useState(false);
   const [isNew, setIsNew] = useState(
-    JSON.parse(localStorage.getItem("new_chat_mode"))
+    JSON.parse(localStorage.getItem("new_chat_mode")),
   );
 
   const btnClick = (flag) => {
