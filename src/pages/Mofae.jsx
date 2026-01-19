@@ -8,8 +8,10 @@ const Mofaet = () => {
   );
 
   const btnClick = (flag) => {
+    setLoading(true);
     localStorage.setItem("new_chat_mode", flag);
     window.location.reload();
+    setLoading(false);
   };
 
   const theme = {
