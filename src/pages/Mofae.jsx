@@ -32,7 +32,7 @@ const Mofaet = () => {
     },
     chatWindow: {
       welcomeMessage: `Hello, I am Chidrel, the AI Assistant of the Ministry of Foreign Affairs and External Trade of Bhutan. I am continually learning, and your interactions help me improve. If you have any suggestion, 
-        please <a href="https://docs.google.com/spreadsheets/d/1pXbLyJYO5ctGLfJYuL9RY3FumbZNxx-Vrtvn-LoL5dU/edit?gid=0#gid=0">click here</a> to submit`,
+        please <a href="https://forms.gle/UdNZJKw5gkgvb7qY8">click here</a> to submit`,
       showTitle: true,
       title: "Chidrel",
       titleAvatarSrc: "https://tech.gov.bt/wp-content/uploads/2025/09/logo.png",
