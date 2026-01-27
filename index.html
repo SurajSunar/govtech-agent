@@ -54,6 +54,33 @@
             renderHTML: true,
           },
         },
+        observersConfig: {
+          // The bot message stack has changed
+          observeMessages: (messages) => {
+            const messageIndex = messages.findIndex((msg) => msg.action);
+
+            if (messageIndex > -1) {
+              setTimeout(() => {
+                const chatbotHost = document.querySelector("flowise-chatbot");
+
+                if (chatbotHost && chatbotHost.shadowRoot) {
+                  const shadowRoot = chatbotHost.shadowRoot;
+                  const buttonNodes = shadowRoot.querySelectorAll("button");
+                  const buttons = Array.from(buttonNodes);
+
+                  if (buttons.length) {
+                    buttons?.forEach((btn) => {
+                      if (btn.innerText.includes("Proceed"))
+                        btn.innerText = " Yes";
+                      if (btn.innerText.includes("Reject"))
+                        btn.innerText = " No";
+                    });
+                  }
+                }
+              }, 400);
+            }
+          },
+        },
       });
     </script>
   </body>
