@@ -8,7 +8,7 @@ const Moice = () => {
       message: `<p style="text-align:justify">Responses are generated automatically by AI based on your input, and we cannot guarantee that the information will be complete, accurate, or up-to-date.
         <br/>Accordingly, the information provided by the Chatbot should not be considered as a basis for production workloads.
         <br/>You are solely responsible for the interactions and reliance on the information provided by the Chatbot, as well as for any actions taken or not taken.
-        <br/><b>AI-generated content may be inaccurate. Please validate before making decisions.</b></p>`,
+        <br/><b>AI-generated content may be for informational purpose. Please validate before making decisions.</b></p>`,
       textColor: "black",
       buttonColor: "#3b82f6",
       buttonText: "Start Chatting",
@@ -26,8 +26,7 @@ const Moice = () => {
       titleAvatarSrc: "https://tech.gov.bt/wp-content/uploads/2025/09/logo.png",
       botMessage: {
         showAvatar: true,
-        avatarSrc:
-          "https://tech.gov.bt/wp-content/uploads/2025/09/bot-avatar.png",
+        avatarSrc: "https://tech.gov.bt/wp-content/uploads/2025/09/logo.png",
       },
       footer: {
         textColor: "#303235",
