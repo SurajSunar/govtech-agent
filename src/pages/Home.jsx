@@ -17,6 +17,26 @@ function Home() {
         <Link to={"mofaet"} className="p-4 hover:underline cursor-pointer">
           MOFAET
         </Link>
+
+        <Link to={"nlcs"} className="p-4 hover:underline cursor-pointer">
+          NLCS
+        </Link>
+        <Link to={"moh"} className="p-4 hover:underline cursor-pointer">
+          MOH
+        </Link>
+        <Link to={"moit"} className="p-4 hover:underline cursor-pointer">
+          MOIT
+        </Link>
+
+        <Link to={"moha"} className="p-4 hover:underline cursor-pointer">
+          MOHA
+        </Link>
+        <Link to={"nsb"} className="p-4 hover:underline cursor-pointer">
+          NSB
+        </Link>
+        <Link to={"moesd"} className="p-4 hover:underline cursor-pointer">
+          MOESD
+        </Link>
       </nav>
       <div className="h-1/2 flex justify-center items-center">
         <h1 className="text-4xl text-amber-800">{message}</h1>

@@ -1,7 +1,7 @@
 import { BubbleChat } from "flowise-embed-react";
 import { useEffect } from "react";
 
-const Moice = () => {
+const Moesd = () => {
   const theme = {
     disclaimer: {
       title: "Disclaimer",
@@ -51,7 +51,7 @@ const Moice = () => {
         </h1>
       </div>
       <BubbleChat
-        chatflowid="0e67c7ea-0dfb-487a-8476-1c028d9f84dd"
+        chatflowid="9e9fb94f-0f14-4ee4-ad98-141d493e801b"
         apiHost="https://chatbot.tech.gov.bt"
         theme={{ ...theme }}
       />
@@ -59,4 +59,4 @@ const Moice = () => {
   );
 };
 
-export default Moice;
+export default Moesd;
