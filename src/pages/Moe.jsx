@@ -1,16 +1,16 @@
 import { BubbleChat } from "flowise-embed-react";
 import { useEffect } from "react";
 
-const Moesd = () => {
+const Moe = () => {
   const theme = {
     disclaimer: {
       title: "Disclaimer",
       message: `<p style="text-align:justify">Responses are generated automatically by AI based on your input, and we cannot guarantee that the information will be complete, accurate, or up-to-date.
         <br/>Accordingly, the information provided by the Chatbot should not be considered as a basis for production workloads.
         <br/>You are solely responsible for the interactions and reliance on the information provided by the Chatbot, as well as for any actions taken or not taken.
-        <br/><b>AI-generated content may be for informational purpose. Please validate before making decisions.</b></p>`,
+        <br/><b>AI-generated content may be inaccurate. Please validate before making decisions.</b></p>`,
       textColor: "black",
-      buttonColor: "#3b82fa6",
+      buttonColor: "#3b82f6",
       buttonText: "Start Chatting",
       buttonTextColor: "white",
       blurredBackgroundColor: "rgba(0, 0, 0, 0.4)", //The color of the blurred background that overlays the chat interface
@@ -20,13 +20,14 @@ const Moesd = () => {
     },
     chatWindow: {
       welcomeMessage:
-        "Kuzuzangpo la! I am AI Assistant of the Ministry of Industry, Commerce and Employment. How can I help you today?",
+        "Kuzuzangpo la! 👋 I am MOE AI Assistant. How can I help you today?",
       showTitle: true,
-      title: "MoICE Chatbot",
+      title: "MOE AI Chatbot",
       titleAvatarSrc: "https://tech.gov.bt/wp-content/uploads/2025/09/logo.png",
       botMessage: {
         showAvatar: true,
-        avatarSrc: "https://tech.gov.bt/wp-content/uploads/2025/09/logo.png",
+        avatarSrc:
+          "https://rcsc.gov.bt/wp-content/uploads/2024/11/RCSC-logo-1.png",
       },
       footer: {
         textColor: "#303235",
@@ -46,12 +47,12 @@ const Moesd = () => {
   return (
     <div className="bg-linear-to-br from-amber-200 via-amber-100 to-amber-50 w-full h-60 rounded-lg">
       <div className="h-full flex justify-center items-center">
-        <h1 className="text-4xl text-amber-700">
-          Welcome to the AI Chatbot for MoICE
+        <h1 className="text-4xl text-amber-800">
+          Welcome to the RAG Agent for MOE
         </h1>
       </div>
       <BubbleChat
-        chatflowid="9e9fb94f-0f14-4ee4-ad98-141d493e801b"
+        chatflowid="fb1cd705-76ed-4db5-9baa-dc3dfa7b4e80"
         apiHost="https://chatbot.tech.gov.bt"
         theme={{ ...theme }}
       />
@@ -59,4 +60,4 @@ const Moesd = () => {
   );
 };
 
-export default Moesd;
+export default Moe;

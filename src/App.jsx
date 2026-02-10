@@ -9,7 +9,7 @@ import Moh from "./pages/Moh";
 import Moit from "./pages/Moit";
 import Moha from "./pages/Moha";
 import Nsb from "./pages/Nsb";
-import Moesd from "./pages/Moesd";
+import Moe from "./pages/Moe";
 
 function App() {
   return (
@@ -26,7 +26,7 @@ function App() {
             <Route path="/moit" Component={Moit}></Route>
             <Route path="/moha" Component={Moha}></Route>
             <Route path="/nsb" Component={Nsb}></Route>
-            <Route path="/moesd" Component={Moesd}></Route>
+            <Route path="/moe" Component={Moe}></Route>
           </Routes>
         </HashRouter>
       </div>

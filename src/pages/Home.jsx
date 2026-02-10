@@ -34,8 +34,8 @@ function Home() {
         <Link to={"nsb"} className="p-4 hover:underline cursor-pointer">
           NSB
         </Link>
-        <Link to={"moesd"} className="p-4 hover:underline cursor-pointer">
-          MOESD
+        <Link to={"moe"} className="p-4 hover:underline cursor-pointer">
+          MOE
         </Link>
       </nav>
       <div className="h-1/2 flex justify-center items-center">

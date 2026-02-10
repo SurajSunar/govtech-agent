@@ -22,7 +22,7 @@ const Moit = () => {
       welcomeMessage:
         "Kuzuzangpo la! I am AI Assistant of the MoIT. How can I help you today?",
       showTitle: true,
-      title: "MoICE Chatbot",
+      title: "MoIT Chatbot",
       titleAvatarSrc: "https://tech.gov.bt/wp-content/uploads/2025/09/logo.png",
       botMessage: {
         showAvatar: true,

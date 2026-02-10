@@ -22,7 +22,7 @@ const Nsb = () => {
       welcomeMessage:
         "Kuzuzangpo la! I am AI Assistant of NSB. How can I help you today?",
       showTitle: true,
-      title: "MoICE Chatbot",
+      title: "NSB Chatbot",
       titleAvatarSrc: "https://tech.gov.bt/wp-content/uploads/2025/09/logo.png",
       botMessage: {
         showAvatar: true,
