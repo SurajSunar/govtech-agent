@@ -18,23 +18,23 @@ function Home() {
           MOFAET
         </Link>
 
-        <Link to={"nlcs"} className="p-4 hover:underline cursor-pointer">
+        <Link to={"/app/nlcs"} className="p-4 hover:underline cursor-pointer">
           NLCS
         </Link>
-        <Link to={"moh"} className="p-4 hover:underline cursor-pointer">
+        <Link to={"/app/moh"} className="p-4 hover:underline cursor-pointer">
           MOH
         </Link>
-        <Link to={"moit"} className="p-4 hover:underline cursor-pointer">
+        <Link to={"/app/moit"} className="p-4 hover:underline cursor-pointer">
           MOIT
         </Link>
 
-        <Link to={"moha"} className="p-4 hover:underline cursor-pointer">
+        <Link to={"/app/moha"} className="p-4 hover:underline cursor-pointer">
           MOHA
         </Link>
-        <Link to={"nsb"} className="p-4 hover:underline cursor-pointer">
+        <Link to={"/app/nsb"} className="p-4 hover:underline cursor-pointer">
           NSB
         </Link>
-        <Link to={"moe"} className="p-4 hover:underline cursor-pointer">
+        <Link to={"/app/moe"} className="p-4 hover:underline cursor-pointer">
           MOE
         </Link>
       </nav>
