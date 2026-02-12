@@ -5,6 +5,7 @@ import Moice from "./pages/Moice";
 import Mofaet from "./pages/Mofae";
 import Home from "./pages/Home";
 import Floatchat from "./pages/Floatchat";
+import Rcsc2 from "./pages/Rcsc2";
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
           <Routes>
             <Route path="/" Component={Home}></Route>
             <Route path="/rcsc" Component={Rcsc}></Route>
+            <Route path="/rcsc-v2" Component={Rcsc2}></Route>
+
             <Route path="/moice" Component={Moice}></Route>
             <Route path="/mofaet" Component={Mofaet}></Route>
 
