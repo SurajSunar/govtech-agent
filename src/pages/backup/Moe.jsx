@@ -1,6 +1,5 @@
 import { BubbleChat } from "flowise-embed-react";
 import { useEffect } from "react";
-import Floatchat from "../Floatchat";
 
 const Moe = () => {
   const theme = {

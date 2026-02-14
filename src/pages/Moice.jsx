@@ -51,8 +51,8 @@ const Moice = () => {
         </h1>
       </div>
       <BubbleChat
-        chatflowid="0e67c7ea-0dfb-487a-8476-1c028d9f84dd"
-        apiHost="https://chatbot.tech.gov.bt"
+        chatflowid={import.meta.env.VITE_APP_ID_MOICE}
+        apiHost={import.meta.env.VITE_APP_HOST}
         theme={{ ...theme }}
       />
     </div>

@@ -52,8 +52,8 @@ const Rcsc2 = () => {
         </h1>
       </div>
       <BubbleChat
-        chatflowid="501f1a3d-4b6c-45f7-923a-b8d2e01cc978"
-        apiHost="https://chatbot.tech.gov.bt"
+        chatflowid={import.meta.env.VITE_APP_ID_RCSC2}
+        apiHost={import.meta.env.VITE_APP_HOST}
         theme={{ ...theme }}
         observersConfig={{
           // The bot message stack has changed

@@ -82,8 +82,8 @@ const Mofaet = () => {
       {isNew ? (
         <BubbleChat
           //chatflowid="5f56cce0-73c4-440e-934d-6127e245865b"
-          chatflowid="a9d6d456-4b27-4805-8f03-532560d9700c"
-          apiHost="https://chatbot.tech.gov.bt"
+          chatflowid={import.meta.env.VITE_APP_ID_MOFAET2}
+          apiHost={import.meta.env.VITE_APP_HOST}
           theme={{ ...theme }}
           observersConfig={{
             // The bot message stack has changed
@@ -115,9 +115,9 @@ const Mofaet = () => {
         />
       ) : (
         <BubbleChat
-          chatflowid="5f56cce0-73c4-440e-934d-6127e245865b"
+          chatflowid={import.meta.env.VITE_APP_ID_MOFAET}
           //chatflowid="a9d6d456-4b27-4805-8f03-532560d9700c"
-          apiHost="https://chatbot.tech.gov.bt"
+          apiHost={import.meta.env.VITE_APP_HOST}
           theme={{
             ...theme,
             chatWindow: { ...theme.chatWindow, title: "Old Chidrel" },
