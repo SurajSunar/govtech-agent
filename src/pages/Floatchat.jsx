@@ -5,32 +5,32 @@ import { Link, useParams } from "react-router-dom";
 const APP_CONFIG = {
   moe: {
     appName: "MOE",
-    key: "9e9fb94f-0f14-4ee4-ad98-141d493e801b",
+    key: import.meta.env.VITE_APP_ID_MOE,
     logo: "",
   },
   nlcs: {
     appName: "NLCS",
-    key: "caf5e096-7ef7-406e-b213-a7b750783aac",
+    key: import.meta.env.VITE_APP_ID_NLCS,
     logo: "",
   },
   moh: {
     appName: "MOH",
-    key: "a74fa02c-bc26-4275-a74b-e9e99cbe2de2",
+    key: import.meta.env.VITE_APP_ID_MOH,
     logo: "",
   },
   moit: {
     appName: "MOIT",
-    key: "ba354c53-d0ed-4d27-9d4d-3f2e9e795fa6",
+    key: import.meta.env.VITE_APP_ID_MOIT,
     logo: "",
   },
   moha: {
     appName: "MOHA",
-    key: "fbbec566-f195-4590-8a7f-493badb57b91",
+    key: import.meta.env.VITE_APP_ID_MOHA,
     logo: "",
   },
   nsb: {
     appName: "NSB",
-    key: "07789988-d360-4717-b597-7eca9ce63035",
+    key: import.meta.env.VITE_APP_ID_NSB,
     logo: "",
   },
 };
@@ -102,7 +102,7 @@ const Floatchat = () => {
       </div>
       <BubbleChat
         chatflowid={config?.key}
-        apiHost="https://chatbot.tech.gov.bt"
+        apiHost={import.meta.env.VITE_APP_HOST}
         theme={{ ...theme }}
       />
     </div>
