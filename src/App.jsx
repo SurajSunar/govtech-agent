@@ -10,7 +10,7 @@ import Rcsc2 from "./pages/Rcsc2";
 function App() {
   return (
     <div className="bg-amber-50 backdrop-blur-sm">
-      <div className="flex flex-col mx-auto h-screen w-1/2 items-center justify-center">
+      <div className="flex flex-col mx-auto h-screen w-full md:w-3/4 items-center justify-center p-4 md:p-0">
         <HashRouter>
           <Routes>
             <Route path="/" Component={Home}></Route>
