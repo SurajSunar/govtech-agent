@@ -33,6 +33,21 @@ const APP_CONFIG = {
     key: import.meta.env.VITE_APP_ID_NSB,
     logo: "",
   },
+  govtech: {
+    appName: "GovTech",
+    key: import.meta.env.VITE_APP_ID_GOVTECH,
+    logo: "",
+  },
+  moal: {
+    appName: "MOAL",
+    key: import.meta.env.VITE_APP_ID_MOAL,
+    logo: "",
+  },
+  moenr: {
+    appName: "MOENR",
+    key: import.meta.env.VITE_APP_ID_MOENR,
+    logo: "",
+  },
 };
 
 const Floatchat = () => {

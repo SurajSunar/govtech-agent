@@ -38,18 +38,18 @@ const MENU_LIST = [
     appName: "MOE",
     route: "/app/moe",
   },
-  // {
-  //   appName: "MOE",
-  //   route: "/app/moe",
-  // },
-  // {
-  //   appName: "MOE",
-  //   route: "/app/moe",
-  // },
-  // {
-  //   appName: "MOE",
-  //   route: "/app/moe",
-  // },
+  {
+    appName: "GovTech",
+    route: "/app/govtech",
+  },
+  {
+    appName: "MOAL",
+    route: "/app/moal",
+  },
+  {
+    appName: "MOENR",
+    route: "/app/moenr",
+  },
 ];
 
 function Home() {
