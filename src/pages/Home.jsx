@@ -3,59 +3,65 @@ import { Link } from "react-router-dom";
 
 const MENU_LIST = [
   {
-    appName: "RCSC",
-    route: "rcsc",
+    appName: "POS",
+    route: "pos",
   },
   {
-    appName: "MOICE",
-    route: "moice",
+    appName: "SCANNER",
+    route: "scanner",
   },
-  {
-    appName: "MOFAET",
-    route: "mofaet",
-  },
-  {
-    appName: "NLCS",
-    route: "/app/nlcs",
-  },
-  {
-    appName: "MOH",
-    route: "/app/nlcs",
-  },
-  {
-    appName: "MOIT",
-    route: "/app/moit",
-  },
-  {
-    appName: "MOHA",
-    route: "/app/moha",
-  },
-  {
-    appName: "NSB",
-    route: "/app/nsb",
-  },
-  {
-    appName: "MOE",
-    route: "/app/moe",
-  },
-  {
-    appName: "GovTech",
-    route: "/app/govtech",
-  },
-  {
-    appName: "MOAL",
-    route: "/app/moal",
-  },
-  {
-    appName: "MOENR",
-    route: "/app/moenr",
-  },
+  // {
+  //   appName: "RCSC",
+  //   route: "rcsc",
+  // },
+  // {
+  //   appName: "MOICE",
+  //   route: "moice",
+  // },
+  // {
+  //   appName: "MOFAET",
+  //   route: "mofaet",
+  // },
+  // {
+  //   appName: "NLCS",
+  //   route: "/app/nlcs",
+  // },
+  // {
+  //   appName: "MOH",
+  //   route: "/app/nlcs",
+  // },
+  // {
+  //   appName: "MOIT",
+  //   route: "/app/moit",
+  // },
+  // {
+  //   appName: "MOHA",
+  //   route: "/app/moha",
+  // },
+  // {
+  //   appName: "NSB",
+  //   route: "/app/nsb",
+  // },
+  // {
+  //   appName: "MOE",
+  //   route: "/app/moe",
+  // },
+  // {
+  //   appName: "GovTech",
+  //   route: "/app/govtech",
+  // },
+  // {
+  //   appName: "MOAL",
+  //   route: "/app/moal",
+  // },
+  // {
+  //   appName: "MOENR",
+  //   route: "/app/moenr",
+  // },
 ];
 
 function Home() {
-  const [message, setMessage] = useState(
-    "Welcome to the RAG Agent for Gov Agencies.",
-  );
+  const [message, setMessage] = useState("Welcome to CID Scanner Demo");
   return (
     <div className="bg-linear-to-br from-amber-200 via-amber-100 to-amber-50 w-full h-60 rounded-lg p-2">
       <nav className="flex flex-wrap justify-center font-semibold text-amber-700 mt-2 gap-y-2 text-center">

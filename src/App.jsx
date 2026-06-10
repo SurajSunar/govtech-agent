@@ -6,14 +6,19 @@ import Mofaet from "./pages/Mofae";
 import Home from "./pages/Home";
 import Floatchat from "./pages/Floatchat";
 import Rcsc2 from "./pages/Rcsc2";
+import Pos from "./pages/Pos";
+import ScannerPage from "./pages/Scanner";
 
 function App() {
   return (
-    <div className="bg-amber-50 backdrop-blur-sm">
-      <div className="flex flex-col mx-auto h-screen w-full md:w-3/4 items-center justify-center p-4 md:p-0">
+    <div className="bg-amber-50">
+      <div className="flex flex- mx-auto h-screen w-full md:w-3/4 items-center justify-center p-4 md:p-0">
         <HashRouter>
           <Routes>
             <Route path="/" Component={Home}></Route>
+            <Route path="/pos" Component={Pos}></Route>
+            <Route path="/scanner" Component={ScannerPage}></Route>
+
             <Route path="/rcsc" Component={Rcsc}></Route>
             <Route path="/rcsc-v2" Component={Rcsc2}></Route>
 

@@ -1,0 +1,741 @@
+<!doctype html>
+<html lang="en-US">
+  <body
+    class="home wp-singular page-template page-template-page-template-blank page-template-page-template-blank-php page page-id-271771 custom-background wp-theme-Divi et_button_custom_icon et_pb_button_helper_class et_pb_gutter osx et_pb_gutters3 et_pb_pagebuilder_layout et_smooth_scroll et_no_sidebar et_divi_theme et-db"
+  >
+    <!-- CHATBOAT -->
+    <script type="module">
+      document.cookie =
+        "chatbotDisclaimer=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/";
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const chatBot = document.querySelector("flowise-chatbot");
+        const chat = chatBot.shadowRoot.querySelector(".chatbot-container");
+
+        if (!chat) return;
+
+        chat.addEventListener("mouseenter", () => {
+          document.body.classList.remove("et_smooth_scroll");
+        });
+
+        chat.addEventListener("mouseleave", () => {
+          document.body.classList.add("et_smooth_scroll");
+        });
+      });
+
+      //   setTimeout(() => {
+      //     debugger;
+      //     const chatBot = document.querySelector("flowise-chatbot");
+      //     const bubble = chatBot.shadowRoot.querySelector(".chatbot-container");
+      //     if (bubble) {
+      //       bubble.addEventListener(
+      //         "wheel",
+      //         function (e) {
+      //           e.stopPropagation();
+      //         },
+      //         { passive: false },
+      //       );
+      //     }
+      //   }, 4000);
+      import Chatbot from "https://cdn.jsdelivr.net/gh/tshering314/GovTechChatEmbed/dist/web.js";
+      Chatbot.init({
+        chatflowid: "0e67c7ea-0dfb-487a-8476-1c028d9f84dd",
+        apiHost: "https://chatbot.tech.gov.bt",
+        theme: {
+          disclaimer: {
+            title: "Disclaimer",
+            message: `<p style="text-align:justify">Responses are generated automatically by AI based on your input, and we cannot guarantee that the information will be complete, accurate, or up-to-date.
+        <br/>Accordingly, the information provided by the Chatbot should not be considered as a basis for production workloads.
+        <br/>You are solely responsible for the interactions and reliance on the information provided by the Chatbot, as well as for any actions taken or not taken.
+        <br/><b>AI-generated content may be for informational purpose. Please validate before making decisions.</b></p>`,
+            textColor: "black",
+            buttonColor: "#3b82f6",
+            buttonText: "Start Chatting",
+            buttonTextColor: "white",
+            blurredBackgroundColor: "rgba(0, 0, 0, 0.4)", //The color of the blurred background that overlays the chat interface
+            backgroundColor: "white",
+            denyButtonText: "Cancel",
+            denyButtonBgColor: "#ef4444",
+          },
+          customCSS: `.chatbot-container{ overflow-y: auto !important;-webkit-overflow-scrolling: touch;} .flowise-chat-container * {pointer-events: auto;}`,
+          chatWindow: {
+            welcomeMessage:
+              "Kuzuzangpo la! I am AI Assistant of the Ministry of Industry, Commerce and Employment. How can I help you today?",
+            showTitle: true,
+            title: "MoICE Chatbot",
+            titleAvatarSrc:
+              "https://tech.gov.bt/wp-content/uploads/2025/09/logo.png",
+            botMessage: {
+              showAvatar: true,
+              avatarSrc:
+                "https://tech.gov.bt/wp-content/uploads/2025/09/logo.png",
+            },
+            footer: {
+              textColor: "#303235",
+              text: "Powered by",
+              company: "Govtech Bhutan",
+              companyLink: "https://tech.gov.bt",
+            },
+            renderHTML: true,
+          },
+        },
+      });
+    </script>
+
+    <script type="text/javascript">
+      var et_animation_data = [
+        {
+          class: "et_pb_fullwidth_post_slider_0",
+          style: "flip",
+          repeat: "once",
+          duration: "1000ms",
+          delay: "0ms",
+          intensity: "50%",
+          starting_opacity: "0%",
+          speed_curve: "ease-in-out",
+        },
+        {
+          class: "et_pb_text_2",
+          style: "slideBottom",
+          repeat: "once",
+          duration: "1000ms",
+          delay: "0ms",
+          intensity: "10%",
+          starting_opacity: "0%",
+          speed_curve: "ease-in-out",
+        },
+        {
+          class: "et_pb_column_inner_14",
+          style: "flipLeft",
+          repeat: "once",
+          duration: "1000ms",
+          delay: "0ms",
+          intensity: "50%",
+          starting_opacity: "0%",
+          speed_curve: "ease-in-out",
+        },
+        {
+          class: "et_pb_column_inner_15",
+          style: "flipLeft",
+          repeat: "once",
+          duration: "1000ms",
+          delay: "0ms",
+          intensity: "50%",
+          starting_opacity: "0%",
+          speed_curve: "ease-in-out",
+        },
+        {
+          class: "et_pb_column_inner_16",
+          style: "flipRight",
+          repeat: "once",
+          duration: "1000ms",
+          delay: "0ms",
+          intensity: "50%",
+          starting_opacity: "0%",
+          speed_curve: "ease-in-out",
+        },
+        {
+          class: "et_pb_column_inner_17",
+          style: "flipRight",
+          repeat: "once",
+          duration: "1000ms",
+          delay: "0ms",
+          intensity: "50%",
+          starting_opacity: "0%",
+          speed_curve: "ease",
+        },
+        {
+          class: "et_pb_image_2",
+          style: "zoom",
+          repeat: "once",
+          duration: "1000ms",
+          delay: "0ms",
+          intensity: "35%",
+          starting_opacity: "99%",
+          speed_curve: "ease-in-out",
+        },
+        {
+          class: "et_pb_image_3",
+          style: "zoom",
+          repeat: "once",
+          duration: "1000ms",
+          delay: "0ms",
+          intensity: "20%",
+          starting_opacity: "0%",
+          speed_curve: "ease-in-out",
+        },
+        {
+          class: "et_pb_image_4",
+          style: "zoom",
+          repeat: "once",
+          duration: "1000ms",
+          delay: "0ms",
+          intensity: "20%",
+          starting_opacity: "0%",
+          speed_curve: "ease-in-out",
+        },
+        {
+          class: "et_pb_image_5",
+          style: "zoom",
+          repeat: "once",
+          duration: "1000ms",
+          delay: "0ms",
+          intensity: "20%",
+          starting_opacity: "0%",
+          speed_curve: "ease-in-out",
+        },
+        {
+          class: "et_pb_image_6",
+          style: "zoom",
+          repeat: "once",
+          duration: "1000ms",
+          delay: "0ms",
+          intensity: "20%",
+          starting_opacity: "0%",
+          speed_curve: "ease-in-out",
+        },
+        {
+          class: "et_pb_column_11",
+          style: "transformAnim",
+          repeat: "once",
+          duration: "1000ms",
+          delay: "0ms",
+          intensity: "50%",
+          starting_opacity: "0%",
+          speed_curve: "ease-in-out",
+          style_tablet: "transformAnim",
+          style_phone: "transformAnim",
+        },
+        {
+          class: "et_pb_column_12",
+          style: "transformAnim",
+          repeat: "once",
+          duration: "1000ms",
+          delay: "0ms",
+          intensity: "50%",
+          starting_opacity: "0%",
+          speed_curve: "ease-in-out",
+          style_tablet: "transformAnim",
+          style_phone: "transformAnim",
+        },
+        {
+          class: "et_pb_column_13",
+          style: "zoom",
+          repeat: "once",
+          duration: "1000ms",
+          delay: "0ms",
+          intensity: "50%",
+          starting_opacity: "0%",
+          speed_curve: "ease-in-out",
+        },
+        {
+          class: "et_pb_column_14",
+          style: "transformAnim",
+          repeat: "once",
+          duration: "1000ms",
+          delay: "0ms",
+          intensity: "50%",
+          starting_opacity: "0%",
+          speed_curve: "ease-in-out",
+          style_tablet: "transformAnim",
+          style_phone: "transformAnim",
+        },
+        {
+          class: "et_pb_column_15",
+          style: "transformAnim",
+          repeat: "once",
+          duration: "1000ms",
+          delay: "0ms",
+          intensity: "50%",
+          starting_opacity: "0%",
+          speed_curve: "ease-in-out",
+          style_tablet: "transformAnim",
+          style_phone: "transformAnim",
+        },
+        {
+          class: "et_pb_column_16",
+          style: "slide",
+          repeat: "once",
+          duration: "1000ms",
+          delay: "0ms",
+          intensity: "50%",
+          starting_opacity: "0%",
+          speed_curve: "ease-in-out",
+        },
+        {
+          class: "et_pb_blurb_8",
+          style: "zoom",
+          repeat: "once",
+          duration: "1000ms",
+          delay: "0ms",
+          intensity: "10%",
+          starting_opacity: "0%",
+          speed_curve: "ease-in-out",
+        },
+      ];
+      var et_link_options_data = [
+        { class: "et_pb_menu_0", url: "#", target: "_self" },
+        {
+          class: "et_pb_blurb_0",
+          url: "https:\/\/www.blmis.gov.bt\/jobseeker_page\/mispage",
+          target: "_blank",
+        },
+        {
+          class: "et_pb_blurb_1",
+          url: "https:\/\/www.blmis.gov.bt",
+          target: "_blank",
+        },
+        {
+          class: "et_pb_blurb_2",
+          url: "https:\/\/iis.industry.gov.bt\/",
+          target: "_blank",
+        },
+        {
+          class: "et_pb_blurb_3",
+          url: "http:\/\/www.bhutantradeportal.bt",
+          target: "_blank",
+        },
+        {
+          class: "et_pb_blurb_4",
+          url: "https:\/\/ibls.moea.gov.bt",
+          target: "_blank",
+        },
+        {
+          class: "et_pb_blurb_5",
+          url: "https:\/\/investbhutan.gov.bt\/",
+          target: "_blank",
+        },
+        {
+          class: "et_pb_blurb_6",
+          url: "https:\/\/www.btfn.bt\/",
+          target: "_blank",
+        },
+        {
+          class: "et_pb_blurb_7",
+          url: "https:\/\/ccms.ccaa.gov.bt\/complain-form\/new",
+          target: "_blank",
+        },
+      ];
+    </script>
+    <script
+      type="text/javascript"
+      src="https://cdn.canvasjs.com/canvasjs.min.js"
+      id="canvasjs-free-js"
+    ></script>
+    <script type="text/javascript" id="divi-custom-script-js-extra">
+      /* <![CDATA[ */
+      var DIVI = { item_count: "%d Item", items_count: "%d Items" };
+      var et_builder_utils_params = {
+        condition: { diviTheme: true, extraTheme: false },
+        scrollLocations: ["app", "top"],
+        builderScrollLocations: { desktop: "app", tablet: "app", phone: "app" },
+        onloadScrollLocation: "app",
+        builderType: "fe",
+      };
+      var et_frontend_scripts = {
+        builderCssContainerPrefix: "#et-boc",
+        builderCssLayoutPrefix: "#et-boc .et-l",
+      };
+      var et_pb_custom = {
+        ajaxurl: "https://www.moice.gov.bt/wp-admin/admin-ajax.php",
+        images_uri: "https://www.moice.gov.bt/wp-content/themes/Divi/images",
+        builder_images_uri:
+          "https://www.moice.gov.bt/wp-content/themes/Divi/includes/builder/images",
+        et_frontend_nonce: "5ab3dded41",
+        subscription_failed:
+          "Please, check the fields below to make sure you entered the correct information.",
+        et_ab_log_nonce: "f099d1b808",
+        fill_message: "Please, fill in the following fields:",
+        contact_error_message: "Please, fix the following errors:",
+        invalid: "Invalid email",
+        captcha: "Captcha",
+        prev: "Prev",
+        previous: "Previous",
+        next: "Next",
+        wrong_captcha: "You entered the wrong number in captcha.",
+        wrong_checkbox: "Checkbox",
+        ignore_waypoints: "no",
+        is_divi_theme_used: "1",
+        widget_search_selector: ".widget_search",
+        ab_tests: [],
+        is_ab_testing_active: "",
+        page_id: "271771",
+        unique_test_id: "",
+        ab_bounce_rate: "5",
+        is_cache_plugin_active: "no",
+        is_shortcode_tracking: "",
+        tinymce_uri:
+          "https://www.moice.gov.bt/wp-content/themes/Divi/includes/builder/frontend-builder/assets/vendors",
+        accent_color: "#7EBEC5",
+        waypoints_options: [],
+      };
+      var et_pb_box_shadow_elements = [];
+      //# sourceURL=divi-custom-script-js-extra
+      /* ]]> */
+    </script>
+    <script
+      type="text/javascript"
+      src="https://www.moice.gov.bt/wp-content/themes/Divi/js/scripts.min.js?ver=4.20.4"
+      id="divi-custom-script-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://www.moice.gov.bt/wp-content/themes/Divi/js/smoothscroll.js?ver=4.20.4"
+      id="smoothscroll-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://www.moice.gov.bt/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids.js?ver=4.20.4"
+      id="fitvids-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://www.moice.gov.bt/wp-includes/js/comment-reply.min.js?ver=6.9.4"
+      id="comment-reply-js"
+      async="async"
+      data-wp-strategy="async"
+      fetchpriority="low"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://www.moice.gov.bt/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.mobile.js?ver=4.20.4"
+      id="jquery-mobile-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://www.moice.gov.bt/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/magnific-popup.js?ver=4.20.4"
+      id="magnific-popup-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://www.moice.gov.bt/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/easypiechart.js?ver=4.20.4"
+      id="easypiechart-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://www.moice.gov.bt/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/salvattore.js?ver=4.20.4"
+      id="salvattore-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://www.moice.gov.bt/wp-content/themes/Divi/core/admin/js/common.js?ver=4.20.4"
+      id="et-core-common-js"
+    ></script>
+    <script type="text/javascript" id="mediaelement-core-js-before">
+      /* <![CDATA[ */
+      var mejsL10n = {
+        language: "en",
+        strings: {
+          "mejs.download-file": "Download File",
+          "mejs.install-flash":
+            "You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https://get.adobe.com/flashplayer/",
+          "mejs.fullscreen": "Fullscreen",
+          "mejs.play": "Play",
+          "mejs.pause": "Pause",
+          "mejs.time-slider": "Time Slider",
+          "mejs.time-help-text":
+            "Use Left/Right Arrow keys to advance one second, Up/Down arrows to advance ten seconds.",
+          "mejs.live-broadcast": "Live Broadcast",
+          "mejs.volume-help-text":
+            "Use Up/Down Arrow keys to increase or decrease volume.",
+          "mejs.unmute": "Unmute",
+          "mejs.mute": "Mute",
+          "mejs.volume-slider": "Volume Slider",
+          "mejs.video-player": "Video Player",
+          "mejs.audio-player": "Audio Player",
+          "mejs.captions-subtitles": "Captions/Subtitles",
+          "mejs.captions-chapters": "Chapters",
+          "mejs.none": "None",
+          "mejs.afrikaans": "Afrikaans",
+          "mejs.albanian": "Albanian",
+          "mejs.arabic": "Arabic",
+          "mejs.belarusian": "Belarusian",
+          "mejs.bulgarian": "Bulgarian",
+          "mejs.catalan": "Catalan",
+          "mejs.chinese": "Chinese",
+          "mejs.chinese-simplified": "Chinese (Simplified)",
+          "mejs.chinese-traditional": "Chinese (Traditional)",
+          "mejs.croatian": "Croatian",
+          "mejs.czech": "Czech",
+          "mejs.danish": "Danish",
+          "mejs.dutch": "Dutch",
+          "mejs.english": "English",
+          "mejs.estonian": "Estonian",
+          "mejs.filipino": "Filipino",
+          "mejs.finnish": "Finnish",
+          "mejs.french": "French",
+          "mejs.galician": "Galician",
+          "mejs.german": "German",
+          "mejs.greek": "Greek",
+          "mejs.haitian-creole": "Haitian Creole",
+          "mejs.hebrew": "Hebrew",
+          "mejs.hindi": "Hindi",
+          "mejs.hungarian": "Hungarian",
+          "mejs.icelandic": "Icelandic",
+          "mejs.indonesian": "Indonesian",
+          "mejs.irish": "Irish",
+          "mejs.italian": "Italian",
+          "mejs.japanese": "Japanese",
+          "mejs.korean": "Korean",
+          "mejs.latvian": "Latvian",
+          "mejs.lithuanian": "Lithuanian",
+          "mejs.macedonian": "Macedonian",
+          "mejs.malay": "Malay",
+          "mejs.maltese": "Maltese",
+          "mejs.norwegian": "Norwegian",
+          "mejs.persian": "Persian",
+          "mejs.polish": "Polish",
+          "mejs.portuguese": "Portuguese",
+          "mejs.romanian": "Romanian",
+          "mejs.russian": "Russian",
+          "mejs.serbian": "Serbian",
+          "mejs.slovak": "Slovak",
+          "mejs.slovenian": "Slovenian",
+          "mejs.spanish": "Spanish",
+          "mejs.swahili": "Swahili",
+          "mejs.swedish": "Swedish",
+          "mejs.tagalog": "Tagalog",
+          "mejs.thai": "Thai",
+          "mejs.turkish": "Turkish",
+          "mejs.ukrainian": "Ukrainian",
+          "mejs.vietnamese": "Vietnamese",
+          "mejs.welsh": "Welsh",
+          "mejs.yiddish": "Yiddish",
+        },
+      };
+      //# sourceURL=mediaelement-core-js-before
+      /* ]]> */
+    </script>
+    <script
+      type="text/javascript"
+      src="https://www.moice.gov.bt/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.17"
+      id="mediaelement-core-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://www.moice.gov.bt/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=6.9.4"
+      id="mediaelement-migrate-js"
+    ></script>
+    <script type="text/javascript" id="mediaelement-js-extra">
+      /* <![CDATA[ */
+      var _wpmejsSettings = {
+        pluginPath: "/wp-includes/js/mediaelement/",
+        classPrefix: "mejs-",
+        stretching: "responsive",
+        audioShortcodeLibrary: "mediaelement",
+        videoShortcodeLibrary: "mediaelement",
+      };
+      //# sourceURL=mediaelement-js-extra
+      /* ]]> */
+    </script>
+    <script
+      type="text/javascript"
+      src="https://www.moice.gov.bt/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=6.9.4"
+      id="wp-mediaelement-js"
+    ></script>
+    <script
+      type="text/javascript"
+      id="et-builder-modules-script-motion-js-extra"
+    >
+      /* <![CDATA[ */
+      var et_pb_motion_elements = { desktop: [], tablet: [], phone: [] };
+      //# sourceURL=et-builder-modules-script-motion-js-extra
+      /* ]]> */
+    </script>
+    <script
+      type="text/javascript"
+      src="https://www.moice.gov.bt/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/motion-effects.js?ver=4.20.4"
+      id="et-builder-modules-script-motion-js"
+    ></script>
+    <script
+      type="text/javascript"
+      id="et-builder-modules-script-sticky-js-extra"
+    >
+      /* <![CDATA[ */
+      var et_pb_sticky_elements = {
+        et_pb_menu_0: {
+          id: "et_pb_menu_0",
+          selector: ".et_pb_menu_0",
+          position: { desktop: "top", tablet: "top", phone: "none" },
+          topOffset: "0px",
+          bottomOffset: "0px",
+          topLimit: "none",
+          bottomLimit: "none",
+          offsetSurrounding: "on",
+          transition: "on",
+          styles: {
+            module_alignment: { desktop: "center", tablet: "", phone: "" },
+          },
+        },
+      };
+      //# sourceURL=et-builder-modules-script-sticky-js-extra
+      /* ]]> */
+    </script>
+    <script
+      type="text/javascript"
+      src="https://www.moice.gov.bt/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/sticky-elements.js?ver=4.20.4"
+      id="et-builder-modules-script-sticky-js"
+    ></script>
+    <script id="wp-emoji-settings" type="application/json">
+      {
+        "baseUrl": "https://s.w.org/images/core/emoji/17.0.2/72x72/",
+        "ext": ".png",
+        "svgUrl": "https://s.w.org/images/core/emoji/17.0.2/svg/",
+        "svgExt": ".svg",
+        "source": {
+          "concatemoji": "https://www.moice.gov.bt/wp-includes/js/wp-emoji-release.min.js?ver=6.9.4"
+        }
+      }
+    </script>
+    <script type="module">
+      /* <![CDATA[ */
+      /*! This file is auto-generated */
+      const a = JSON.parse(
+          document.getElementById("wp-emoji-settings").textContent,
+        ),
+        o = ((window._wpemojiSettings = a), "wpEmojiSettingsSupports"),
+        s = ["flag", "emoji"];
+      function i(e) {
+        try {
+          var t = { supportTests: e, timestamp: new Date().valueOf() };
+          sessionStorage.setItem(o, JSON.stringify(t));
+        } catch (e) {}
+      }
+      function c(e, t, n) {
+        (e.clearRect(0, 0, e.canvas.width, e.canvas.height),
+          e.fillText(t, 0, 0));
+        t = new Uint32Array(
+          e.getImageData(0, 0, e.canvas.width, e.canvas.height).data,
+        );
+        (e.clearRect(0, 0, e.canvas.width, e.canvas.height),
+          e.fillText(n, 0, 0));
+        const a = new Uint32Array(
+          e.getImageData(0, 0, e.canvas.width, e.canvas.height).data,
+        );
+        return t.every((e, t) => e === a[t]);
+      }
+      function p(e, t) {
+        (e.clearRect(0, 0, e.canvas.width, e.canvas.height),
+          e.fillText(t, 0, 0));
+        var n = e.getImageData(16, 16, 1, 1);
+        for (let e = 0; e < n.data.length; e++) if (0 !== n.data[e]) return !1;
+        return !0;
+      }
+      function u(e, t, n, a) {
+        switch (t) {
+          case "flag":
+            return n(
+              e,
+              "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f",
+              "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f",
+            )
+              ? !1
+              : !n(
+                  e,
+                  "\ud83c\udde8\ud83c\uddf6",
+                  "\ud83c\udde8\u200b\ud83c\uddf6",
+                ) &&
+                  !n(
+                    e,
+                    "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f",
+                    "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f",
+                  );
+          case "emoji":
+            return !a(e, "\ud83e\u1fac8");
+        }
+        return !1;
+      }
+      function f(e, t, n, a) {
+        let r;
+        const o = (r =
+            "undefined" != typeof WorkerGlobalScope &&
+            self instanceof WorkerGlobalScope
+              ? new OffscreenCanvas(300, 150)
+              : document.createElement("canvas")).getContext("2d", {
+            willReadFrequently: !0,
+          }),
+          s = ((o.textBaseline = "top"), (o.font = "600 32px Arial"), {});
+        return (
+          e.forEach((e) => {
+            s[e] = t(o, e, n, a);
+          }),
+          s
+        );
+      }
+      function r(e) {
+        var t = document.createElement("script");
+        ((t.src = e), (t.defer = !0), document.head.appendChild(t));
+      }
+      ((a.supports = { everything: !0, everythingExceptFlag: !0 }),
+        new Promise((t) => {
+          let n = (function () {
+            try {
+              var e = JSON.parse(sessionStorage.getItem(o));
+              if (
+                "object" == typeof e &&
+                "number" == typeof e.timestamp &&
+                new Date().valueOf() < e.timestamp + 604800 &&
+                "object" == typeof e.supportTests
+              )
+                return e.supportTests;
+            } catch (e) {}
+            return null;
+          })();
+          if (!n) {
+            if (
+              "undefined" != typeof Worker &&
+              "undefined" != typeof OffscreenCanvas &&
+              "undefined" != typeof URL &&
+              URL.createObjectURL &&
+              "undefined" != typeof Blob
+            )
+              try {
+                var e =
+                    "postMessage(" +
+                    f.toString() +
+                    "(" +
+                    [
+                      JSON.stringify(s),
+                      u.toString(),
+                      c.toString(),
+                      p.toString(),
+                    ].join(",") +
+                    "));",
+                  a = new Blob([e], { type: "text/javascript" });
+                const r = new Worker(URL.createObjectURL(a), {
+                  name: "wpTestEmojiSupports",
+                });
+                return void (r.onmessage = (e) => {
+                  (i((n = e.data)), r.terminate(), t(n));
+                });
+              } catch (e) {}
+            i((n = f(s, u, c, p)));
+          }
+          t(n);
+        }).then((e) => {
+          for (const n in e)
+            ((a.supports[n] = e[n]),
+              (a.supports.everything = a.supports.everything && a.supports[n]),
+              "flag" !== n &&
+                (a.supports.everythingExceptFlag =
+                  a.supports.everythingExceptFlag && a.supports[n]));
+          var t;
+          ((a.supports.everythingExceptFlag =
+            a.supports.everythingExceptFlag && !a.supports.flag),
+            a.supports.everything ||
+              ((t = a.source || {}).concatemoji
+                ? r(t.concatemoji)
+                : t.wpemoji && t.twemoji && (r(t.twemoji), r(t.wpemoji))));
+        }));
+      //# sourceURL=https://www.moice.gov.bt/wp-includes/js/wp-emoji-loader.min.js
+      /* ]]> */
+    </script>
+  </body>
+</html>
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/?utm_source=w3tc&utm_medium=footer_comment&utm_campaign=free_plugin
+
+
+Served from: www.moice.gov.bt @ 2026-03-31 22:28:08 by W3 Total Cache
+-->
