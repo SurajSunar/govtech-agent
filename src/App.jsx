@@ -22,7 +22,7 @@ function App() {
 
             <Route path="/app/:appName" element={<Floatchat />} />
 
-            {/* This is not required for now */}
+            {/* This is not required for now removed it */}
             {/* <Route path="/nlcs" Component={Nlcs}></Route>
             <Route path="/moh" Component={Moh}></Route>
             <Route path="/moit" Component={Moit}></Route>
